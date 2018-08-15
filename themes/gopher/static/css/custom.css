@@ -1,0 +1,5 @@
+#hero h2 {
+  text-transform: lowercase;
+}
+#breadcrumbs-custom-separator li:after {
+  content: '|'; }

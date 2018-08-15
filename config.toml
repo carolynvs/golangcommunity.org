@@ -1,0 +1,7 @@
+baseURL = "https://golangcommunity.org"
+languageCode = "en-us"
+title = "Go Community Foundation"
+theme = "gopher"
+
+[params]
+  description = "Supporting the Go Community"

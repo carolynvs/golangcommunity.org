@@ -1,0 +1,48 @@
+{{ define "header"}} {{ partial "header" .}} {{end}}
+{{ define "main"}}
+<div id="main">
+  <div id="hero">
+    <h1>{{.Title }}</h1>
+    {{if .Description }}
+    <h2>{{.Description}}</h2>
+    {{end}}
+  </div>
+  <div>
+    <div id="post">
+        {{.Content}}
+    </div>
+  </div>
+  <div id="kube-features">
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <figure>
+          <a href="/about">
+            <img alt="gophers at work" src="{{ "/img/build.png" | relURL }}" width="256" height="256">
+          </a>
+        </figure>
+        <h3>About</h3>
+        <p>Legal and Organizational Documents</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <a href="/community/">
+            <img alt="gophers hugging" src="{{ "/img/hugs.png" | relURL }}" width="256" height="256">
+          </a>
+        </figure>
+      <h3>Community</h3>
+      <p>Maintaining and growing the amazing Go community that we have come to love.</p>
+    </div>
+    <div class="col col-4 item">
+      <figure>
+        <a href="/projects">
+          <img alt="gophers learning together" src="{{ "/img/share.png" | relURL }}" width="256" height="256">
+        </a>
+      </figure>
+      <h3>Projects</h3>
+      <p>Projects Sponsored by The Go Community Foundation</p>
+    </div>
+    </div>
+
+  </div>
+{{ end }}
+{{ define "footer"}} {{ partial "footer" .}} {{end}}

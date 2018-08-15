@@ -1,0 +1,20 @@
+<div id="demo-sidebar">
+{{ $currentSection := .Section }}
+{{ $currentPage := . }}
+{{ range $name, $menu := .Site.Menus }}
+	{{ if ne $name "main" }}
+			{{ if eq $currentSection $name }}
+			{{ title $currentSection }}
+			<nav id="somenav-{{ $name }}">
+				<ul>
+				{{ range $menu }}
+						<li>
+							* <a href="{{ .URL }}" {{if  $currentPage.IsMenuCurrent $name . }} class="active"{{end}}>{{ .Name }}</a>
+						</li>
+				{{end}}
+			</ul>
+			</nav>
+			{{ end }}
+	{{ end }}
+{{ end }}
+</div>
