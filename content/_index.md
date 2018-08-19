@@ -1,9 +1,12 @@
 ---
-title: The Go Community Foundation
-description: An Organization For The Go Community
+title: Go Community Foundation
+description: A community of gophers and their open-source projects
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vulputate ut pharetra sit amet. A diam maecenas sed enim ut sem viverra. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Cursus in hac habitasse platea dictumst quisque. Faucibus purus in massa tempor nec. Augue eget arcu dictum varius duis at consectetur. Ornare quam viverra orci sagittis eu volutpat odio facilisis mauris. Ut faucibus pulvinar elementum integer enim neque. Mattis molestie a iaculis at erat. Tempus urna et pharetra pharetra massa massa. Id velit ut tortor pretium. Mattis molestie a iaculis at erat pellentesque adipiscing. Bibendum arcu vitae elementum curabitur vitae nunc sed velit.
-
+The Go Community Foundation is committed to the advancement the Go programming
+language and critical open-source projects within the Go ecosystem. We support
+the Go community through advocating for community-led features, fostering a
+diverse and inclusive culture that welcomes contributors and builds bridges
+between project leadership and the larger community.
 
 <center><h4>Learn More</h4></center>
