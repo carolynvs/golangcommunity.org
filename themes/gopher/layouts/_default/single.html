@@ -2,9 +2,9 @@
 {{ define "header"}} {{ partial "header" .}} {{end}}
 
 {{ define "main" }}
-<div id="demo-container" class="is-container">
-{{ partial "aboutmenu" . }}
-<div id="demo-content">
+<div id="container" class="is-container">
+{{ partial "left-nav" . }}
+<div id="content">
 <div id="hero" class="wrap">
   <h1>{{.Title }}</h1>
   {{if .Description }}

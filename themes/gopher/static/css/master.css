@@ -133,79 +133,81 @@ h1, h2, h3, h4, h5, h6 {
       color: rgba(0, 0, 0, 0.4);
       border-color: rgba(0, 0, 0, 0.2); }
 
-#subnav {
-  margin-top: 24px;
+#left {
+  display: flex;
+  align-items: left;
   margin-bottom: 24px;
-  font-size: 15px; }
-  #subnav ul {
-    margin: 0;
-    text-align: center; }
-  #subnav li {
-    display: inline-block; }
-  #subnav li.active a,
-  #subnav span {
-    color: rgba(0, 0, 0, 0.4); }
-  #subnav form,
-  #subnav em,
-  #subnav span,
-  #subnav a {
-    display: inline-block;
-    padding: 2px 16px; }
-  #subnav em {
-    font-style: normal; }
-  #subnav a {
-    color: #3794de;
-    text-decoration: none; }
-    #subnav a:hover {
-      -moz-transition: all linear 0.2s;
-      transition: all linear 0.2s;
-      color: #000;
-      text-decoration: underline; }
-  #subnav li:first-child b a {
-    color: #3794de;
-    font-weight: normal;
-    text-decoration: none; }
-    #subnav li:first-child b a:hover {
-      -moz-transition: all linear 0.2s;
-      transition: all linear 0.2s;
-      color: #000;
-      text-decoration: underline; }
-  #subnav b a {
-    color: #000;
-    text-decoration: underline; }
-    #subnav b a:hover {
-      -moz-transition: all linear 0.2s;
-      transition: all linear 0.2s;
-      color: rgba(0, 0, 0, 0.6);
-      text-decoration: underline; }
-  #subnav .action-button a {
-    background: rgba(28, 134, 242, 0.05);
-    font-size: 15px;
-    margin-left: 16px;
-    padding: 2px 16px;
-    border-radius: 3px;
-    border: 1px solid rgba(28, 134, 242, 0.5); }
-    #subnav .action-button a:hover {
-      background: #1c86f2;
-      border-color: #1c86f2;
-      color: #fff;
-      text-decoration: none; }
-  #subnav form {
-    margin: 0; }
-    #subnav form button {
-      font-size: 15px;
-      line-height: 24px;
-      color: #3794de;
-      height: auto;
-      padding: 0;
+  padding: 0 36px;
+  height: 88px; }
+  #left #left-brand {
+    margin-right: 52px; }
+    #left #left-brand span,
+    #left #left-brand a {
       background: none;
-      box-shadow: none;
-      vertical-align: baseline; }
-      #subnav form button:hover {
+      text-indent: -9999px;
+      width: 70px;
+      line-height: 11px;
+      background-repeat: no-repeat; }
+
+  #left ul {
+    align-items: left;
+    margin: 0; }
+  #left #left-nav {
+    padding-left: 52px; }
+    #left #left-nav li {
+      font-size: 16px;
+      font-weight: 500;
+      margin-right: 40px; }
+    #left #left-nav span,
+    #left #left-nav a {
+      display: block;
+      white-space: nowrap;
+      line-height: 2em;}
+    #left #left-nav a {
+      color: #000;
+      text-decoration: none; }
+      #left #left-nav a:hover {
         -moz-transition: all linear 0.2s;
         transition: all linear 0.2s;
-        color: #000;
+        color: rgba(0, 0, 0, 0.6);
         text-decoration: underline; }
+    #left #left-nav b a,
+    #left #left-nav span {
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.4); }
+    #left #left-nav b a {
+      text-decoration: underline; }
+      #left #left-nav b a:hover {
+        color: #000; }
+  #left #left-nav-extra {
+    margin-left: auto;
+    font-size: 14px; }
+    #left #left-nav-extra span,
+    #left #left-nav-extra a {
+      color: rgba(0, 0, 0, 0.7);
+      display: block;
+      text-decoration: none;
+      line-height: 28px;
+      border-radius: 28px;
+      padding: 0 20px; }
+    #left #left-nav-extra a:hover {
+      -moz-transition: all linear 0.2s;
+      transition: all linear 0.2s;
+      color: #000;
+      text-decoration: underline; }
+    #left #left-nav-extra span {
+      color: rgba(0, 0, 0, 0.4); }
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+#left {
+  flex: 0 0 300px; }
+
+#content {
+  flex: auto; }
 
 #hero {
   margin-bottom: 4em;
@@ -219,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 72px;
     font-weight: 900; }
   #hero p {
-    max-width: 740px;
+    max-width: 800px;
     margin: auto;
     font-size: 21px;
     line-height: 32px;
@@ -779,7 +781,7 @@ body.page-account #hero {
   color: rgba(0, 0, 0, 0.5); }
 
 #post-box {
-  max-width: 740px;
+  max-width: 800px;
   margin: auto; }
 
 #post {
@@ -831,7 +833,7 @@ body.page-account #hero {
     padding: 0 24px; }
 
 #kube-faq {
-  max-width: 740px;
+  max-width: 800px;
   margin: auto;
   font-size: 17px;
   line-height: 28px;
